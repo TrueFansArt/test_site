@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Name Title</title>
+  <style> 
+    .green {
+      color:forestgreen; /* не работает для канвасов */
+      background-color: rgb(16, 196, 0);
+    }
+  </style>
+</head>
+<body>
+  <table  cellspacing="15"> 
+    <tr> 
+      <td>
+        <img src="LOGO_TFA.png" width="200"
+        alt="Logo">
+      </td>
+      
+      <td>
+        <h1> Экспекрементирую с кодом </h1>
+        <p> <strong>Задача</strong> добиться наложение <em>обьектов</em> 
+          друг на друга для сайта    
+          <br>
+      <a href="https://sites.google.com/view/truefansart" 
+      target="_blank">www.truefansart.ru</a></p> 
+      </td>
+      
+    </tr>
+  </table>  
+          
+  <ul>
+    <li>Зелёный квадрат</li> 
+    <li>Красный квадрат</li>
+    <li>Синий квадрат</li>
+  </ul>
+
+  <ol>
+    <li>Зелёный квадрат</li> 
+    <li>Красный квадрат</li>
+    <li>Синий квадрат</li>
+  </ol>
+
+  <a href="Vnutrenyaya_stranica.html" target="_blank">Внутренняя страница</a>
+
+  <hr size="6" noshade width="900" color="red" />
+  <table border="1">
+    <thead>
+      <tr>
+        <th>Первый столбец</th>
+        <th>Второй столбец</th>
+        <th>Третий столбец</th>
+      </tr>
+    </thead>
+    
+    <tbody>
+      <tr>
+        <td>Что-то - 1</td>
+        <td>Что-то - 2</td>
+        <td>Что-то - 3</td>
+      </tr>
+      <tr>
+        <td>Вот это - 1</td>
+        <td>Вот это - 2</td>
+        <td>Вот это - 3</td>
+      </tr>  
+    </tbody>
+    
+  </table>
+
+  <br>
+
+  <form action="/">
+    <label for="name"> Ваше имя: </label>
+    <input type="text" id="name"     
+           placeholder="Начните вводить ваше имя..." >
+
+    <br>
+
+    <label for="email"> Ваше email: </label>   
+    <input type="email" id="email"
+           placeholder="Начните вводить ваш email...">
+
+    <br>
+
+    <label for="text"> Ваше сообщение: </label>  
+    <br> 
+    <textarea name="" id="text" cols="15" rows="5"></textarea>
+    <br>  
+    <br>
+
+    <input type="submit" value="Можно задовать кастомное название кнопки отправить">
+
+
+  </form>
+
+  <div>  
+    <h2>Green</h2>
+    <canvas id="squaregreen" class="green" width="300" height="300"></canvas>
+    <h2>Red</h2>
+    <canvas id="squarered" width="300" height="300"></canvas>
+    <h2>Blue</h2>
+    <canvas id="squareblue" width="300" height="300"></canvas>    
+  
+    <div class="conteiner">
+
+
+    </div>
+
+    <script>
+        // sqarered
+        var sq = document.getElementById('squarered').getContext('2d');
+        sq.fillStyle = "red";
+        sq.rect(0, 0, 300, 300);
+        sq.fill();
+
+        // sqarered
+        var sq = document.getElementById('squareblue').getContext('2d');
+        sq.fillStyle = "blue";
+        sq.rect(0, 0, 300, 300);
+        sq.fill();
+    </script>
+     
+    </div>
+</body>
+</html>
